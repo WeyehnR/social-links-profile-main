@@ -70,7 +70,6 @@ body{
 .location-box{
     color: var(--color-green);
     /* text-preset-2-bold */
-    font-family: Inter;
     font-size: var(--font-size-text-preset-2);
     font-style: normal;
     font-weight: 700;
