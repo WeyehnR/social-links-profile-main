@@ -98,6 +98,7 @@ body{
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    letter-spacing: 0.25px; /* ✨ This improves visual spacing */
 }
 
 .button:hover,
