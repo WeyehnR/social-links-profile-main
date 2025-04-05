@@ -17,6 +17,8 @@
     --spacing-500: 40px;
     --spacing-300: 24px;
     --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
 }
 
 /* Body color */
@@ -73,8 +75,37 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 21px */
-    margin-bottom: 24px;
+    margin-bottom: var(--spacing-300);
 }
+
+.links-box{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    width:304px;
+    height: 289px;
+}
+
+.button {
+    width: 100%;
+    height: 45px;
+    padding: var(--spacing-150);
+    background-color: var(--color-grey-700);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--font-size-text-preset-2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--color-green);
+    color: var(--color-grey-900);
+}
+  
 /* Attribution */
 .attribution { 
     position: fixed;
