@@ -73,6 +73,7 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 21px */
+    margin-bottom: 24px;
 }
 /* Attribution */
 .attribution { 
