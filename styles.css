@@ -4,6 +4,10 @@
     /* Colors using hsl for better control of colors */
     /* Fonts color*/
     --color-white: hsla(0, 0%, 100%, 1); 
+    /* Main Title*/
+    --font-size-text-preset-1: 24px;
+    /* Location,Bio, Buttons */
+    --font-size-text-preset-2: 14px;
     /* Color Schemes */
     --color-grey-700: hsla(0, 0%, 20%, 1);
     --color-grey-900: hsla(0, 0%, 8%, 1);
@@ -28,23 +32,50 @@ body{
 }
 
 /* Card Component*/
-.card{
+.card {
     /* Card Layout */
     position: relative;
     display: flex;
-    width: 384px;
-    height: 600px;
+    width: 100%;
     max-width: 384px;
-    max-height: 600px;
+    height: auto;
     padding: var(--spacing-500);
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-300);
-    flex: 1 0 0;
     /* card style */
     border-radius: 12px;
     background: var(--color-grey-800);
     box-sizing: border-box;
+}
+
+.profile-picture img{
+    box-sizing: border-box;
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+}
+
+.name-box{
+    align-self: stretch;
+    color: var(--color-white);
+    text-align: center;
+    /* text-preset-1 */
+    font-size: var(--font-size-text-preset-1);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+
+.location-box{
+    align-self: stretch;
+    color: var(--color-green);
+    text-align: center;
+    /* text-preset-2-bold */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-2);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
 }
 /* Attribution */
 .attribution { 
