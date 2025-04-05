@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root{
+    /* Colors using hsl for better control of colors */
+    /* Fonts color*/
+    --color-white: hsla(0, 0%, 100%, 1); 
+    /* Color Schemes */
+    --color-grey-700: hsla(0, 0%, 20%, 1);
+    --color-grey-900: hsla(0, 0%, 8%, 1);
+    --color-grey-800: hsla(0, 0%, 12%, 1);
+    --color-green: hsla(75, 94%, 57%, 1);
+    /* Spacing */
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+}
+
+/* Body color */
+body{
+    font-family: 'Inter', sans-serif;
+    background: var(--color-grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Card Component*/
+.card{
+    /* Card Layout */
+    position: relative;
+    display: flex;
+    width: 384px;
+    height: 600px;
+    max-width: 384px;
+    max-height: 600px;
+    padding: var(--spacing-500);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+    flex: 1 0 0;
+    /* card style */
+    border-radius: 12px;
+    background: var(--color-grey-800);
+    box-sizing: border-box;
+}
+/* Attribution */
+.attribution { 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--color-white);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
